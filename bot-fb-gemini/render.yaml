@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: bot-fb-gemini
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: VERIFY_TOKEN
+        value: monverifytoken123
+      - key: PAGE_TOKEN
+        value: REMPLIR_DANS_RENDER
+      - key: GEMINI_API_KEY
+        value: REMPLIR_DANS_RENDER
